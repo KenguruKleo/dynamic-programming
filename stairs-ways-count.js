@@ -13,8 +13,8 @@ const stairsWaysCount = (stairs, maxSteps, memo = {}) => {
   return ways;
 }
 
-console.log(stairsWaysCount(3, 3)); //24
-console.log(stairsWaysCount(4, 3)); //24
+console.log(stairsWaysCount(3, 3)); //4
+console.log(stairsWaysCount(4, 3)); //7
 console.log(stairsWaysCount(6, 3)); //24
 console.log(stairsWaysCount(6, 4)); //29
 
@@ -41,7 +41,7 @@ const stairsWaysCountWithTabulator = (stairs, maxSteps) => {
   return table[maxSteps][stairs];
 }
 
-console.log(stairsWaysCountWithTabulator(3, 3)); //24
-console.log(stairsWaysCountWithTabulator(4, 3)); //24
+console.log(stairsWaysCountWithTabulator(3, 3)); //4
+console.log(stairsWaysCountWithTabulator(4, 3)); //7
 console.log(stairsWaysCountWithTabulator(6, 3)); //24
 console.log(stairsWaysCountWithTabulator(6, 4)); //29
